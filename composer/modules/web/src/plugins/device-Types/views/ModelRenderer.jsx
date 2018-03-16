@@ -35,7 +35,7 @@ class ModelRenderer extends React.Component {
         fetch('http://localhost:8280/api/device-mgt/v1.0/device-types', {
             method: 'GET',
             headers: {
-                authorization: 'Bearer 563f85ff-cd2a-35d5-abf8-36943a063fa3',
+                authorization: 'Bearer f26599c4-f79c-3de4-821c-1e6e559a3f50',
             },
         }).then(response => response.json())
             .then((data) => {

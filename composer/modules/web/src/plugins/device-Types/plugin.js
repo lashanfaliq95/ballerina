@@ -47,8 +47,8 @@ class DeviceTypePlugin extends Plugin {
                         const activeEditor = this.appContext.editor.getActiveEditor();
                         let ast = {};
 
-                        if (activeEditor && activeEditor.file && activeEditor.file.props.ast) {
-                            ast = activeEditor.file.props.ast;
+                        if (activeEditor && activeEditor.file && activeEditor.file._props.ast) {
+                            ast = activeEditor.file._props.ast;
                         }
                         return {
                             codeExplorerPlugin: this,
