@@ -26,6 +26,7 @@ import WelcomeTabPlugin from './plugins/welcome-tab/plugin';
 import ImportSwaggerPlugin from './plugins/import-swagger/plugin';
 import ExportDiagramPlugin from './plugins/export-diagram/plugin';
 import CodeExplorerPlugin from './plugins/code-explorer/plugin';
+import DeviceTypePlugin from './plugins/device-Types/plugin';
 import { PLUGIN_ID as HELP_PLUGIN_ID } from './plugins/help/constants';
 import { WELCOME_TAB_PLUGIN_ID } from './plugins/welcome-tab/constants';
 import ImportStructPlugin from './plugins/import-struct/plugin';
@@ -42,6 +43,7 @@ export default {
             ImportSwaggerPlugin,
             ImportStructPlugin,
             ExportDiagramPlugin,
+            DeviceTypePlugin,
         ],
     },
     // provide plugin specific configs - if any.
