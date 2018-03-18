@@ -20,7 +20,7 @@ import { CONTRIBUTIONS } from 'core/plugin/constants';
 
 import { REGIONS } from 'core/layout/constants';
 
-import CodeExplorerPanel from './views/CodeExplorerPanel';
+import DeviceTypePanel from './views/DeviceTypePanel';
 
 
 import { PLUGIN_ID, VIEWS as VIEW_IDS } from './constants';
@@ -42,7 +42,7 @@ class DeviceTypePlugin extends Plugin {
             [VIEWS]: [
                 {
                     id: VIEW_IDS.DEVICE_TYPE_PANEL,
-                    component: CodeExplorerPanel,
+                    component: DeviceTypePanel,
                     propsProvider: () => {
                         const activeEditor = this.appContext.editor.getActiveEditor();
                         let ast = {};
@@ -58,8 +58,8 @@ class DeviceTypePlugin extends Plugin {
                     region: REGIONS.LEFT_PANEL,
             // region specific options for left-panel views
                     regionOptions: {
-                        activityBarIcon: 'outline',
-                        panelTitle: 'Outline',
+                        activityBarIcon: 'devices',
+                        panelTitle: 'Device Types',
                         panelActions: [
 
                         ],
